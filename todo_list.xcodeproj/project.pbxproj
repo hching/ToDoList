@@ -14,13 +14,14 @@
 		836AE77C188D891600D23CDB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 836AE77B188D891600D23CDB /* main.m */; };
 		836AE780188D891600D23CDB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 836AE77F188D891600D23CDB /* AppDelegate.m */; };
 		836AE783188D891600D23CDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 836AE781188D891600D23CDB /* Main.storyboard */; };
-		836AE786188D891600D23CDB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 836AE785188D891600D23CDB /* ViewController.m */; };
 		836AE788188D891600D23CDB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 836AE787188D891600D23CDB /* Images.xcassets */; };
 		836AE78F188D891600D23CDB /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 836AE78E188D891600D23CDB /* XCTest.framework */; };
 		836AE790188D891600D23CDB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 836AE76F188D891600D23CDB /* Foundation.framework */; };
 		836AE791188D891600D23CDB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 836AE773188D891600D23CDB /* UIKit.framework */; };
 		836AE799188D891600D23CDB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 836AE797188D891600D23CDB /* InfoPlist.strings */; };
 		836AE79B188D891600D23CDB /* todo_listTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 836AE79A188D891600D23CDB /* todo_listTests.m */; };
+		836AE7A9188D899900D23CDB /* ToDoListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 836AE7A8188D899900D23CDB /* ToDoListTableViewController.m */; };
+		836AE7AC188D8A0B00D23CDB /* ToDoListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 836AE7AB188D8A0B00D23CDB /* ToDoListCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +46,16 @@
 		836AE77E188D891600D23CDB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		836AE77F188D891600D23CDB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		836AE782188D891600D23CDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		836AE784188D891600D23CDB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		836AE785188D891600D23CDB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		836AE787188D891600D23CDB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		836AE78D188D891600D23CDB /* todo_listTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = todo_listTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		836AE78E188D891600D23CDB /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		836AE796188D891600D23CDB /* todo_listTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "todo_listTests-Info.plist"; sourceTree = "<group>"; };
 		836AE798188D891600D23CDB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		836AE79A188D891600D23CDB /* todo_listTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = todo_listTests.m; sourceTree = "<group>"; };
+		836AE7A7188D899900D23CDB /* ToDoListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToDoListTableViewController.h; sourceTree = "<group>"; };
+		836AE7A8188D899900D23CDB /* ToDoListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToDoListTableViewController.m; sourceTree = "<group>"; };
+		836AE7AA188D8A0B00D23CDB /* ToDoListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToDoListCell.h; sourceTree = "<group>"; };
+		836AE7AB188D8A0B00D23CDB /* ToDoListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToDoListCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,10 +118,12 @@
 				836AE77E188D891600D23CDB /* AppDelegate.h */,
 				836AE77F188D891600D23CDB /* AppDelegate.m */,
 				836AE781188D891600D23CDB /* Main.storyboard */,
-				836AE784188D891600D23CDB /* ViewController.h */,
-				836AE785188D891600D23CDB /* ViewController.m */,
 				836AE787188D891600D23CDB /* Images.xcassets */,
 				836AE776188D891600D23CDB /* Supporting Files */,
+				836AE7A7188D899900D23CDB /* ToDoListTableViewController.h */,
+				836AE7A8188D899900D23CDB /* ToDoListTableViewController.m */,
+				836AE7AA188D8A0B00D23CDB /* ToDoListCell.h */,
+				836AE7AB188D8A0B00D23CDB /* ToDoListCell.m */,
 			);
 			path = todo_list;
 			sourceTree = "<group>";
@@ -249,7 +254,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				836AE786188D891600D23CDB /* ViewController.m in Sources */,
+				836AE7AC188D8A0B00D23CDB /* ToDoListCell.m in Sources */,
+				836AE7A9188D899900D23CDB /* ToDoListTableViewController.m in Sources */,
 				836AE780188D891600D23CDB /* AppDelegate.m in Sources */,
 				836AE77C188D891600D23CDB /* main.m in Sources */,
 			);
@@ -460,6 +466,7 @@
 				836AE7A0188D891600D23CDB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		836AE7A1188D891600D23CDB /* Build configuration list for PBXNativeTarget "todo_listTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +475,7 @@
 				836AE7A3188D891600D23CDB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
