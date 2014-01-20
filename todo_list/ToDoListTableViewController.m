@@ -84,9 +84,11 @@
         [self.tableView setEditing:NO animated:YES];
         [self.view endEditing:YES];
         self.navigationItem.leftBarButtonItem.title = @"Edit";
+        self.navigationItem.rightBarButtonItem.enabled = true;
     } else {
         [self.tableView setEditing:YES animated:YES];
         self.navigationItem.leftBarButtonItem.title = @"Done";
+        self.navigationItem.rightBarButtonItem.enabled = false;
     }
 }
 
