@@ -26,6 +26,8 @@
 
 @implementation ToDoListTableViewController
 
+static char indexPathKey;
+
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
@@ -121,7 +123,7 @@
     static NSString *CellIdentifier = @"ToDoListCell";
     ToDoListCell *cell = [self.tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     cell.toDoTextField.text = [self.toDoList objectAtIndex:indexPath.row];
-    objc_setAssociatedObject(cell.toDoTextField, "ToDoPath", indexPath, OBJC_ASSOCIATION_COPY_NONATOMIC);
+    objc_setAssociatedObject(cell.toDoTextField, &indexPathKey, indexPath, OBJC_ASSOCIATION_COPY_NONATOMIC);
     
     return cell;
 }
@@ -145,7 +147,7 @@
 - (void)textFieldDidEndEditing:(UITextField *)textField
 {
     //NSLog(@"Saving...");
-    NSIndexPath *indexPath = objc_getAssociatedObject(textField, "ToDoPath");
+    NSIndexPath *indexPath = objc_getAssociatedObject(textField, &indexPathKey);
     NSUInteger row = indexPath.row;
     [self.toDoList setObject:textField.text atIndexedSubscript:row];
     [self saveToDoList];
