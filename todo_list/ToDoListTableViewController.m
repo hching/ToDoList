@@ -117,7 +117,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"ToDoListCell";
-    ToDoListCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    ToDoListCell *cell = [self.tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     cell.toDoTextField.text = [self.toDoList objectAtIndex:indexPath.row];
     objc_setAssociatedObject(cell.toDoTextField, "ToDoPath", indexPath, OBJC_ASSOCIATION_COPY_NONATOMIC);
     
@@ -128,9 +128,9 @@
 {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         [self.toDoList removeObjectAtIndex:indexPath.row];
-        [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
+        [self.tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
         [self saveToDoList];
-        [tableView reloadData];
+        [self.tableView reloadData];
     }
 }
 
